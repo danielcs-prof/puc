@@ -4,8 +4,8 @@ import {create,researchAll,update,deleted} from '../controllers/clienteControlle
 const router : Router = Router()
 
 router.post('/cliente',create)
-//router.get('/cliente',researchAll)
-//router.put('/cliente',update)
+router.get('/cliente',researchAll)
+router.put('/cliente/:id',update)
 //router.delete('/cliente',deleted)
 
 export default router
